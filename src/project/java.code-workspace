@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"name": "java",
+			"path": "../../../../java"
+		},
+		{
+			"name": "HTML_CSS",
+			"path": "../../../../HTML_CSS"
+		},
+		{
+			"name": "bootstrap1",
+			"path": "../../../../bootstrap1"
+		},
+		{
+			"name": "hrms",
+			"path": "../.."
+		},
+		{
+			"name": "react",
+			"path": "../../../../react"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "java"
+	}
+}

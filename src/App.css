@@ -1,0 +1,376 @@
+.App {
+  text-align: center;
+  display: flex;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* for login */
+
+.box{
+  margin-top: 15%;
+  background-color: white;
+  box-shadow: 4px 8px 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px; 
+  padding: 20px;
+  height: 100%;
+  width: 80%;
+  margin-left: 40%;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.password-input {
+  position: relative;
+}
+.box1{
+  /* background-color: #61dafb; */
+  width: 100vh;
+  height: 100vh;
+  
+  
+}
+
+.password-toggle-container {
+  position: absolute;
+  right: 10px; /* Adjust this value to move the icon left or right */
+  top: 50%; /* Adjust this value to position the icon vertically */
+  transform: translateY(-50%);
+}
+.password-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* for sidnavbar */
+
+
+.drop{
+  padding-top: 0px;
+  width: 100%;
+  height: 18px;
+  background-color: blue;
+}
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  overflow-y: auto;
+  padding-left: 20px;
+
+ 
+}
+
+.sidenav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav li {
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  flex: 1;
+}
+
+.sidenav li a {
+  color: black;
+  text-decoration: none;
+}
+
+.sidenav li a:hover {
+  background-color: #555;
+}
+
+
+/* for dash board */
+
+.color-boxes-container {
+  /* padding: 20px; */
+  text-align: left;
+  color: white;
+  display: flex;
+}
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+.red {
+  border-radius: 10px;
+  margin-right: 50px;
+  width: 400px;
+  background: linear-gradient(to left, #cc66ff 40%, #9966ff 100%);
+}
+
+.green {
+  border-radius: 10px;
+  margin-right: 50px;
+  width: 400px;
+  background: linear-gradient(to left, #6666ff 39%, #3399ff 100%);
+
+}
+
+.blue {
+  border-radius: 10px;
+  margin-right: 50px;
+  width: 400px;
+  background: linear-gradient(to left, #339966 37%, #339933 100%);
+  margin-bottom: 2%;
+}
+
+.dashboard {
+  height: 600px;
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color:  #DADBDD;
+}
+.color-boxes-container{
+  margin-top: 1%;
+  margin-left: 20px;
+}
+.scrollable-container {
+  max-height: 500px;
+  overflow-y: auto;
+}
+.top {
+  
+  text-decoration: underline;
+  margin-top: 50px;
+}
+.white {
+  margin-left: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  width: 300px;
+}
+.color-boxes-container {
+  /* padding: 20px; */
+  text-align: center;
+  color: black;
+  display: flex;
+}
+.dash{
+  margin-left: 18px;
+  text-align: left;
+}
+.number {
+  text-align: center;
+}
+
+
+/* for step 1 to 5 */
+
+.name {
+  text-align: left;
+  margin-left: 80px;
+  margin-bottom: none;
+
+}
+
+
+/* for forms */
+
+.form{
+	width:540px;
+	height:440px;
+	/* margin:calc(50vh - 220px) auto; */
+	padding:20px 30px;
+	max-width:calc(100vw - 40px);
+	box-sizing:border-box;
+	font-family:'Montserrat',sans-serif;
+	position:relative
+}
+input{
+	width:100%;
+	padding:10px;
+	box-sizing:border-box;
+	background:none;
+	outline:none;
+	resize:none;
+	border:0;
+	font-family:'Montserrat',sans-serif;
+	transition:all .3s;
+	border-bottom:2px solid #bebed2
+}
+
+p:before{
+	content:attr(type);
+	display:block;
+	margin:28px 0 0;
+	font-size:14px;
+	color:#5a5a5a;
+  text-align: left;
+  }
+
+
+/* for employeelist */
+
+.bottom{
+  text-decoration: underline;
+  text-align: left;
+  margin: 2%;
+}
+.index{
+  text-align: left;
+  margin : 2%;
+}
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: 2%;
+}
+
+.employee-table th{
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+.employee-table td {
+  padding: 30px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.bold-hr {
+  border: none;
+  border-top: 2px solid black;
+}
+.form1{
+  width: 540px;
+  margin-bottom: 5%;
+  margin-left: 2%;
+}
+
+
+/* for employee imports */
+
+.imports{
+  margin-left: 40px;
+  background-color: #c6c6d0;
+ 
+}
+.low{
+  text-align: left;
+  margin-left: 3%;
+  padding-top: 10px;
+  color: #555;
+}
+.form2{
+  width: 540px;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+.p2{
+  font-weight: bold;
+  color: black;
+  padding: 20px;
+}
+.inner{
+  margin: 5%;
+  background-color: white;
+
+}
+.side{
+  text-decoration: underline;
+  text-align: left;
+  margin: 3%; 
+}
+.text{
+  text-align: left;
+ margin-left: 3%;
+ color: #555;
+ 
+}
+.reset{
+ margin-right: 30%;
+ margin-left: 30%;
+
+}
+.button-container{
+  padding: 20px;
+}
+.dropdown-toggle {
+  border: none; 
+  background: none;
+  cursor: pointer; 
+  
+}
+
+
+/* for awards list */
+
+.itps1{
+ 
+  text-align: left;
+  margin: 2%;
+  background-color: #C6C6D0;
+  border-radius: 15px;
+ 
+}
+.awards{
+ background-color: white;
+ border-radius: 15px;
+  text-align: left;
+  margin : 2%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
